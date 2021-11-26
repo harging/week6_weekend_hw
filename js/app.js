@@ -14,7 +14,7 @@ const handleEvent = function (event) {
     event.preventDefault()
     const newListItem = document.createElement("li")
     newListItem.textContent = 
-    `${event.target.title.value} - ${event.target.developer.value} - ${event.target.format.value}`
+    `${event.target.title.value} - ${event.target.developer.value} - ${event.target.format.value} ${event.target.status.value}`
     const list = document.querySelector("#games-list")
     list.appendChild(newListItem)
     document.querySelector("#new-item-form").reset()

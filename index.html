@@ -9,6 +9,7 @@
     <title>Games List</title>
 </head>
 <body>
+    <h1>GAVIN'S GAMES LIST</h1>
     <form id="new-item-form">
       <div id="form-wrapper">
         <div class="form-item">
@@ -25,14 +26,33 @@
           <label for="format" class="primary">Format</label>
           <select id="format">
             <option value="" disabled selected></option>
-            <option value="played">Played</option>
-            <option value="playing">Playing</option>
-            <option value="want to play">Want to play</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Switch">Switch</option>
+            <option value="Mobile">Mobile</option>
           </select>
         </div>
+        <div>
+            <div>
+                <input type="radio" id="played" name="status" value="&#10003;"
+                        checked>
+                <label for="played">Played</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Playing" name="status" value="&#8883;">
+                <label for="Playing">Playing</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Want to play" name="status" value="&#8939;">
+                <label for="Want to play">Want to play</label>
+            </div>
+        </div>
       </div>
+    <div>
       <input type="submit" value="save"/>
       <input type="submit" value="delete all"/>
+    </div>
     </form>
 
     <h1>Games List</h1>
