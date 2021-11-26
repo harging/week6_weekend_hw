@@ -11,16 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
 let list = document.querySelector("#games-list")
 
 const handleEvent = function (event) {
-    event.preventDefault()
-    const newListItem = document.createElement("li")
+    event.preventDefault();
+    const newListItem = document.createElement("li");
+    newListItem.className = "flex-item";
     newListItem.textContent = 
     `${event.target.title.value} - ${event.target.developer.value} - ${event.target.format.value} ${event.target.status.value}`
-    const list = document.querySelector("#games-list")
-    list.appendChild(newListItem)
-    document.querySelector("#new-item-form").reset()
-}
+    const list = document.querySelector("#games-list");
+    list.appendChild(newListItem);
+    document.querySelector("#new-item-form").reset();
+};
 
 const handleDeleteAll = function (event) {
     const gamesList = document.querySelector('#games-list');
     gamesList.innerHTML = '';
-}
+};
